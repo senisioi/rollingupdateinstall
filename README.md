@@ -1,6 +1,6 @@
-# rollingupdateinstall
+# The OCCS rollingupdate tool install script
 
-## Usage: admin-host-adress bearer haproxy-server-address
+## Usage: sh create_stacks.sh admin-host-adress bearer haproxy-server-address
 
 ### admin-host-adress is the OCCS admin node IP address or name
 
