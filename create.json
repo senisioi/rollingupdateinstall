@@ -1,0 +1,16 @@
+{
+  "deployment_id": "rollingupdate",
+  "deployment_name": "rollingupdate",
+  "placement" : { "pool_id": "default" },
+  "stack":
+   {
+     "service_id": "rollingupdate",
+     "service_name": "rollingupdate",
+     "subtype": "service",
+     "deployment_name": "rollingupdate",
+     "content":
+         "version: 2\nservices:\n  rollingupdate:\n    image: 'mikarinneoracle/rollingupdate:1.0'\n    environment:\n      - 'HAPROXY_URL=http://[admin_address]:1936/haproxy?stats'\n      - HA_USER=occsdemo\n      - HA_PASS=occspass\n    ports:\n      - 1000:3000/tcp\n    volumes:\n      - '/usr/bin/nc:/usr/bin/nc:rw'\n      - '/tmp:/tmp:rw'\n    privileged: true"
+    },
+  "quantities": { "rollingupdate": 1 },
+  "desired_state": 1
+}
