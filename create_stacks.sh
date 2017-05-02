@@ -16,12 +16,12 @@ ssh opc@$3 sudo yum install nc
 
 sed -i.bak 's/admin_address/'$3'/g' create_rollingupdate.json
 
-curl -ski      \
+curl -si -k1      \
      -X "POST" \
      -H "Authorization: Bearer $2" "https://$1/api/v2/deployments/" \
      --data "@create_rollingupdate.json"
 
-curl -ski      \
+curl -si -k1      \
      -X "POST" \
      -H "Authorization: Bearer $2" "https://$1/api/v2/deployments/" \
      --data "@create_dockernode-db.json"
