@@ -28,10 +28,12 @@ Rollingupdate tool installer creates two Dockers:
 
 Rollingupdate tool uses both OCCS REST and the HAProxy socket on volume /tmp using the netcat ('nc') tool (A in the picture below). Since the socket is shared between the HAproxy and the rollingupdate tool it is expected to be run on the same VM as the HAProxy in the app stack (these can be pinned to be run in the same VM in OCCS when running multiple VM's).
 
-Rollingupdate tool can be used to do scaling in/out and rolling updates for any app stack that contains the HAproxy (B in the picture below). It works even if the HAproxy socket is not accessible by the rollingupdate tool (user gets notified when so).  
+Rollingupdate tool can be used to do scaling in/out and rolling updates for any app stack that contains the HAproxy (B in the picture below). It works even if the HAproxy socket is not accessible by the rollingupdate tool (user gets notified when so). 
+
+
 ![Logo](installer.png)
 
-Example config of the Oracle OCCS HAproxy used in this stack configuration found <a href="https://github.com/mikarinneoracle/docker-images/blob/master/ContainerCloud/images/haproxy/haproxy.cfg.template_orig">here</a>.
+Example config of the <a href="https://github.com/oracle/docker-images">Oracle OCCS HAproxy</a> used in this stack configuration found <a href="https://github.com/mikarinneoracle/docker-images/blob/master/ContainerCloud/images/haproxy/haproxy.cfg.template_orig">here</a>.
 
 It is also recommended the application uses sessions for session infinity and that HAproxy is configured properly to use them. The Dockers installed here use Node.js default sessions. Source code for the sample app <a href="https://github.com/mikarinneoracle/dockernode-app">here</a>.
 
