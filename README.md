@@ -1,4 +1,11 @@
+![Logo](logo.png)
+
 # The OCCS rollingupdate tool install script
+
+![Logo](installer1.png)
+
+![Logo](installer.png)
+
 
 ## Usage: sh create_stacks.sh admin-host-adress bearer haproxy-server-address
 
