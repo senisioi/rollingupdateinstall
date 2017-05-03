@@ -6,7 +6,7 @@
 <pre>sh create_stacks.sh admin-host-adress bearer haproxy-server-address</pre>
 <ul>
 <li>admin-host-adress is the OCCS admin node IP address or name</li>
-<li>API token/bearer is the OCCS admin token / bearer</li>
+<li>bearer is the OCCS admin API token / bearer (see below)</li>
 <li>haproxy-server-address is the worked node IP address or name where the HAproxy Docker lives in as part of the stack</li>
 </ul>
 
@@ -33,4 +33,6 @@ Rollingupdate tool can be used to do scaling in/out and rolling updates for any 
 ![Logo](installer.png)
 
 It is also recommended the application uses sessions for session infinity and that HAproxy is configured properly to use them. The Dockers installed here use Node.js default sessions. Source code for the sample app <a href="https://github.com/mikarinneoracle/dockernode-app">here</a>.
+
+Video for running the rolling update tool agains the sample app found <a href="https://www.youtube.com/watch?v=cags1HnRHZM">here</a>.
 
