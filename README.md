@@ -44,3 +44,4 @@ It is also recommended the application uses sessions for session infinity and th
 
 Video for running the rolling update tool agains the sample app found <a href="https://www.youtube.com/watch?v=cags1HnRHZM">here</a>.
 
+If you are interested in Docker container persistence worth checking out <a href="https://github.com/mikarinneoracle/sw-appliance/blob/master/README.md">this one</a>, too!
