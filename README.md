@@ -14,7 +14,12 @@
 ![Logo](bearer.png)
 
 ### Example:
-<pre>sh create_stacks.sh 129.15.69.55 5f312b1f9e9d1f42a8c0ca88cec3675ytfd4636e99779905e9f5155b346a07 129.15.65.17</pre>
+<pre>
+mkdir install
+git clone https://github.com/mikarinneoracle/rollingupdateinstall.git install
+cd install 
+sh create_stacks.sh 129.15.69.55 5f312b1f9e9d1f42a8c0ca88cec3675ytfd4636e99779905e9f5155b346a07 129.15.65.17
+</pre>
 
 ## Architecture
 
