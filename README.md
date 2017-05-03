@@ -13,6 +13,8 @@
 ### API token / bearer can be found in OCCS here:
 ![Logo](bearer.png)
 
+### Example:
+<pre><sh create_stacks.sh 129.15.69.55 5f312b1f9e9d1f42a8c0ca88cec3675ytfd4636e99779905e9f5155b346a07 /pre>
 
 ## Architecture
 
@@ -28,6 +30,7 @@ Rollingupdate tool uses both OCCS REST and the HAProxy socket in volume /tmp usi
 
 Rollingupdate tool can be used to do scaling in/out and rolling updates for any app stack that contain the HAproxy (B in the picture below). Sample config of the Oracle OCCS HAproxy <a href="https://github.com/mikarinneoracle/docker-images/blob/master/ContainerCloud/images/haproxy/haproxy.cfg.template_orig">here</a>.
 
-It is also recommended the application uses sessions for session infinity and that HAproxy is configured properly to use them. The Dockers installed here use Node.js default sessions. Source code for the sample app <a href="https://github.com/mikarinneoracle/dockernode-app">here</a>. 
-
 ![Logo](installer.png)
+
+It is also recommended the application uses sessions for session infinity and that HAproxy is configured properly to use them. The Dockers installed here use Node.js default sessions. Source code for the sample app <a href="https://github.com/mikarinneoracle/dockernode-app">here</a>.
+
