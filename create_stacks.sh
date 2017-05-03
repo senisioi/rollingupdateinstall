@@ -12,7 +12,7 @@ scp public-yum-ol6.repo opc@$3:/tmp/public-yum-ol6.repo
 scp yum.conf opc@$3:/tmp/yum.conf
 ssh opc@$3 sudo mv /tmp/public-yum-ol6.repo /etc/yum.repos.d/public-yum-ol6.repo
 ssh opc@$3 sudo mv /tmp/yum.conf /etc/yum.conf
-ssh opc@$3 sudo yum install nc
+ssh opc@$3 sudo yum -y install nc
 
 sed -i.bak 's/admin_address/'$3'/g' create_rollingupdate.json
 
