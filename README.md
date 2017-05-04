@@ -40,7 +40,9 @@ Rollingupdate tool can be used to do scaling in/out and rolling updates for any 
 
 Example config of the <a href="https://github.com/oracle/docker-images">Oracle OCCS HAproxy</a> used in this stack configuration found <a href="https://github.com/mikarinneoracle/docker-images/blob/master/ContainerCloud/images/haproxy/haproxy.cfg.template_orig">here</a>.
 
-It is also recommended the application uses sessions for session infinity and that HAproxy is configured properly to use them. The Dockers installed here use Node.js default sessions. Source code for the sample app <a href="https://github.com/mikarinneoracle/dockernode-app">here</a>.
+It is recommended the application uses sessions for session infinity and that HAproxy is configured properly to use them. The Dockers installed here use Node.js default sessions. Source code for the sample app <a href="https://github.com/mikarinneoracle/dockernode-app">here</a>.
+
+ By forking the <a href="https://github.com/oracle/docker-images">Oracle git-hub project</a> and using the supplied <i>make</i> you can easily build HAproxy configurations of your own for any app and language.
 
 Video for running the rolling update tool agains the sample app found <a href="https://www.youtube.com/watch?v=cags1HnRHZM">here</a>.
 
