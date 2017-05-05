@@ -3,9 +3,9 @@
 # The OCCS rollingupdate tool install script
 
 ### Usage: 
-<pre>sh create_stacks.sh admin-host-adress bearer haproxy-server-address</pre>
+<pre>sh create_stacks.sh admin-server-adress bearer haproxy-server-address</pre>
 <ul>
-<li>admin-host-adress is the OCCS admin node IP address or name</li>
+<li>admin-server-adress is the OCCS admin node IP address or name</li>
 <li>bearer is the OCCS admin API token / bearer (see below)</li>
 <li>haproxy-server-address is the worked node IP address or name where the HAproxy Docker lives in as part of the stack</li>
 </ul>
