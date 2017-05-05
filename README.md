@@ -9,7 +9,7 @@
 <li>bearer is the OCCS admin API token / bearer (see below)</li>
 <li>haproxy-server-address is the worked node IP address or name where the HAproxy Docker lives in as part of the stack</li>
 </ul>
-Tested on OSX and Oracle IaaS compute (OL6.7).
+Tested on OSX and Oracle IaaS compute (OL6.7). Running on Windows needs some adjustements.
 
 ### API token / bearer can be found in OCCS here:
 ![Logo](bearer.png)
