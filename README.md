@@ -7,7 +7,7 @@
 <ul>
 <li>admin-server-adress is the OCCS admin node IP address or name</li>
 <li>bearer is the OCCS admin API token / bearer (see below)</li>
-<li>haproxy-server-address is the worked node IP address or name where the HAproxy Docker lives in as part of the stack</li>
+<li>haproxy-server-address is the worker node IP address or name where the HAproxy Docker lives in as part of the stack</li>
 </ul>
 Tested on OSX and Oracle IaaS compute (OL6.7). Running on Windows needs some adjustements.
 
