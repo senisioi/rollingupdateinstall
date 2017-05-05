@@ -2,7 +2,7 @@
 
 if [ -z "$1" ] || [ -z "$2" ] || [ -z "$3" ]
   then
-    echo "Usage: admin-host-adress bearer haproxy-server-address"
+    echo "Usage: admin-server-adress bearer haproxy-server-address"
     exit 1
 fi
 
