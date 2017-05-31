@@ -1,6 +1,6 @@
 ![Logo](logo.png)
 
-# The OCCS rollingupdate tool install script
+# Oracle Container Cloud Service (OCCS) rollingupdate tool install script
 
 ### Usage: 
 <pre>sh create_stacks.sh admin-server-adress bearer haproxy-server-address</pre>
