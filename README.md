@@ -47,4 +47,6 @@ It is recommended the application uses sessions for session infinity and that HA
 
 Video for running the rolling update tool against the sample app found <a href="https://www.youtube.com/watch?v=cags1HnRHZM">here</a>.
 
+Check out <a href="https://community.oracle.com/community/cloud_computing/infrastructure-as-a-service-iaas/oracle-container-cloud-service/blog/2017/03/27/using-host-tags-to-specify-where-a-service-deploys">this post</a> if you running on mutiple hosts how to pin (tag) the HAproxy and the rollingupdatetool on the same host VM and run the backends on other hosts. After running the install script you can copy-paste and then modify the YAMLs accordingly to re-create the stack and the service for a proper configuration.
+
 If you are interested in Docker container persistence worth checking out <a href="https://github.com/mikarinneoracle/sw-appliance/blob/master/README.md">this one</a>, too!
