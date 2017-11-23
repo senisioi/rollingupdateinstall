@@ -6,6 +6,17 @@ if [ -z "$1" ] || [ -z "$2" ] || [ -z "$3" ]
     exit 1
 fi
 
+function unsetproxy {
+  unset HTTP_PROXY
+  unset FTP_PROXY
+  unset http_proxy
+  unset https_proxy
+  unset HTTPS_PROXY
+  unset ftp_proxy
+  unset NO_PROXY
+  unset no_proxy
+}
+
 echo "Installing netcat on "$3" and deploying the rollingupdate tool and the dockernode sample app against the "$1" OCCS admin .."
 
 scp public-yum-ol6.repo opc@$3:/tmp/public-yum-ol6.repo
@@ -13,6 +24,8 @@ scp yum.conf opc@$3:/tmp/yum.conf
 ssh occs@$3 sudo mv /tmp/public-yum-ol6.repo /etc/yum.repos.d/public-yum-ol6.repo
 ssh occs@$3 sudo mv /tmp/yum.conf /etc/yum.conf
 ssh occs@$3 sudo yum -y install nc
+
+unsetproxy
 
 sed -i.bak 's/admin_address/'$3'/g' create_rollingupdate.json
 
